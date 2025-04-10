@@ -51,7 +51,7 @@ function Checkout() {
     const token = localStorage.getItem("token"); // Asegúrate de que el token se obtiene correctamente
   
     try {
-      const response = await fetch("http://localhost:5000/comprar", {
+      const response = await fetch("https://back-tiendaclasic.vercel.app/comprar", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
