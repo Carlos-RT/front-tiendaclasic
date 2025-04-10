@@ -11,7 +11,7 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/register", { email, password, role });
+      await axios.post("https://back-tiendaclasic.vercel.app/register", { email, password, role });
       alert("Registro exitoso");
     } catch (error) {
       alert("Error en el registro");
