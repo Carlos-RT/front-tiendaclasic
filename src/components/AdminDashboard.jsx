@@ -9,7 +9,7 @@ function AdminDashboard() {
     const token = localStorage.getItem("token");
 
     try {
-      const response = await fetch("http://localhost:5000/admin/compras", {
+      const response = await fetch("https://back-tiendaclasic.vercel.app/admin/compras", {
         headers: { Authorization: `Bearer ${token}` },
       });
 
