@@ -48,7 +48,7 @@ function UserDashboard() {
     if (!mostrarCompras) {
       try {
         const token = localStorage.getItem("token");
-        const response = await fetch("http://localhost:5000/compras", {
+        const response = await fetch("https://back-tiendaclasic.vercel.app/compras", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,
